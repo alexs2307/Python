@@ -1,15 +1,16 @@
-number_a = int(input("Enter first number: "))
+
+num1 = int(input("Enter first number: "))
 operator = input("Enter operator (+ , - , * , / ): ")
-number_b = int(input("Enter second number: "))
+num2 = int(input("Enter second number: "))
 
 if operator == "+":
-    print(number_a + number_b)
+    print(num1 + num2)
 
 if operator == "-":
-    print(number_a - number_b)
+    print(num1 - num2)
 
 if operator == "*":
-    print(number_a * number_b)
+    print(num1 * num2)
 
 if operator == "/":
-    print(number_a / number_b)
+    print(num1 / num2)
