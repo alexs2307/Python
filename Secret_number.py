@@ -1,14 +1,23 @@
-from random import randint
-secret_number = randint(1, 30)
-guess = 0
-while guess != secret_number:
-    number = input("Guess the secret number \n")
-    guess = int(number)
-    if guess == secret_number:
-        print("You win")
-    else:
-        if guess > secret_number:
-            print("Too high try something smaller")
-        else:
-            print("Too low try something bigger")
-print("Game over")
+import random
+import json
+secret = random.randint(1, 30)
+attempts = 0
+with open("score_list.json", "r") as score_file:
+    score_list = json.loads(score_file.read())
+    print("Top scores: " + str(score_list))
+while True:
+    guess = int(input("Guess the secret number (between 1 and 30): "))
+    attempts += 1
+
+    if guess == secret:
+        score_list.append(attempts)
+        with open("score_list.json", "w") as score_file:
+            score_file.write(json.dumps(score_list))
+        print("You've guessed it - congratulations! It's number " + str(secret))
+        print("Attempts needed: " + str(attempts))
+        break
+    elif guess > secret:
+        print("Your guess is not correct... try something smaller")
+    elif guess < secret:
+        print("Your guess is not correct... try something bigger")
+print("game over")
