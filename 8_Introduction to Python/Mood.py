@@ -10,4 +10,4 @@ elif mood == "angry":
     print("Take a breath and think at beautiful things")
 
 elif mood == "stressed":
-    print("Drink a cup of green tea!!")
+    print("Drink a cup of green tea!!!")

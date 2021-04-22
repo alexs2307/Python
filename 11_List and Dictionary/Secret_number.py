@@ -2,7 +2,7 @@ import datetime
 import json
 import random
 
-player = input("Hi, what is your name? ")
+player = input("Hi, what is your name??? ")
 
 secret = random.randint(1, 30)
 attempts = 0

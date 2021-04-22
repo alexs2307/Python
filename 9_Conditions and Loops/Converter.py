@@ -9,4 +9,4 @@ while True:
     choice = input("Would you like to convert again? (y/n):")
     if choice.lower() != "y" and choice.lower() != "yes":
         break
-print("Thank you for using our Ninja converter ")
+print("Thank you for using our Ninja converter!! ")

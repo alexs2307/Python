@@ -4,4 +4,4 @@ string = input("")
 if string != string.lower():
     print(string.lower())
 else:
-    print("your string has already lowercase letters")
+    print("your string has already lowercase letters!!")
