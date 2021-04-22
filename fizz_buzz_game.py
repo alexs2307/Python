@@ -8,7 +8,7 @@ def fizzbuzz(n):
     elif n % 5 == 0:
         print('Buzz')
     else:
-        print(str(n))
+        print(n)
 
 n=int(input("Enter number from 1 to 100:\n"))
 
