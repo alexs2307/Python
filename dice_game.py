@@ -4,6 +4,7 @@ import random
 def roll_dice():
     dice_total = random.randint(1, 6) + random.randint(1, 6)
     return dice_total
+
 def main():
     player1 = input("Player 1 name\n")
     print(player1.upper())
